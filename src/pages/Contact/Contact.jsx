@@ -59,13 +59,13 @@ export default function Contact() {
           <section className="hero min-h-screen flex items-center relative px-4 sm:px-6 lg:px-8">
             <div className="container mx-auto">
               <motion.div
-                className="grid lg:grid-cols-2 gap-12 items-center"
+                className="grid lg:grid-cols-2 gap-12 items-start"
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
               >
-                {/* Contact Info */}
+                {/* Left Column - Contact Info */}
                 <div className="space-y-8">
                   <motion.div variants={itemVariants}>
                     <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
@@ -76,7 +76,7 @@ export default function Contact() {
                     </p>
                   </motion.div>
 
-                  <div className="space-y-6">
+                  <div className="space-y-6 mt-8">
                     <motion.div
                       className="flex items-center space-x-4"
                       variants={itemVariants}
@@ -124,40 +124,10 @@ export default function Contact() {
                     </motion.div>
                   </div>
 
-                  {/* Social Links */}
-                  <div className="space-y-6 pt-6 border-t border-gray-800">
-                    <motion.h3 
-                      variants={itemVariants}
-                      className="text-xl font-semibold text-gray-200"
-                    >
-                      Connect with me on
-                    </motion.h3>
-                    <div className="space-y-4">
-                      <SocialLink
-                        href="https://github.com/althafbmeledath3"
-                        icon={FaGithub}
-                        color="bg-gray-800/50 text-white"
-                        label="GitHub"
-                      />
-                      <SocialLink
-                        href="https://www.linkedin.com/in/althaf-b-meledath-a5171b305/"
-                        icon={FaLinkedin}
-                        color="bg-blue-500/10 text-blue-400"
-                        label="LinkedIn"
-                      />
-                      <SocialLink
-                        href="https://x.com/althaf_b92110"
-                        icon={FaXTwitter}
-                        color="bg-gray-800/50 text-white"
-                        label="X (Twitter)"
-                      />
-                    </div>
-                  </div>
-
                   {/* Email Me Button */}
                   <motion.a
                     href="mailto:althafbmeledath3@gmail.com?subject=Collaboration%20Inquiry%20from%20Portfolio&body=Hello%20Althaf%20B%20Meledath,%20I%20came%20from%20your%20portfolio.%20I'd%20love%20to%20discuss%20a%20potential%20collaboration!"
-                    className="inline-block bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 px-6 rounded-lg font-semibold"
+                    className="inline-block bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 px-6 rounded-lg font-semibold mt-4"
                     variants={itemVariants}
                     whileHover={{
                       scale: 1.05,
@@ -169,8 +139,35 @@ export default function Contact() {
                   </motion.a>
                 </div>
 
-                {/* Empty column for layout balance */}
-                <div className="hidden lg:block"></div>
+                {/* Right Column - Social Links */}
+                <div className="space-y-8 pt-[5.5rem]">
+                  <motion.h3 
+                    variants={itemVariants}
+                    className="text-2xl font-bold text-gray-200 mb-8"
+                  >
+                    Connect with me on
+                  </motion.h3>
+                  <div className="space-y-6">
+                    <SocialLink
+                      href="https://github.com/althafbmeledath3"
+                      icon={FaGithub}
+                      color="bg-gray-800/50 text-white"
+                      label="GitHub"
+                    />
+                    <SocialLink
+                      href="https://www.linkedin.com/in/althaf-b-meledath-a5171b305/"
+                      icon={FaLinkedin}
+                      color="bg-blue-500/10 text-blue-400"
+                      label="LinkedIn"
+                    />
+                    <SocialLink
+                      href="https://x.com/althaf_b92110"
+                      icon={FaXTwitter}
+                      color="bg-gray-800/50 text-white"
+                      label="X (Twitter)"
+                    />
+                  </div>
+                </div>
               </motion.div>
             </div>
           </section>
