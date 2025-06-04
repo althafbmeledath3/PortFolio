@@ -1,4 +1,4 @@
-import HeroImg from "@/assets/images/hero.jpg";
+import HeroImg from "@/assets/images/Hero.jpg";
 
 import OlovaLogo from "@/assets/images/olova.png";
 
