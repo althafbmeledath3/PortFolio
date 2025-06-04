@@ -15,24 +15,24 @@ const EducationSection = () => {
 
   const educationData = [
     {
-      degree: "Secondary School Certificate (SSC)",
-      school: "Natore Textile Institute",
-      mascot: "📘",
-      year: "2019-2021",
-      achievements: ["GPA: 4.89", "Subject: Science"],
-      skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
+      degree: "Higher Secondary",
+      school: "Kendriya Vidyalaya Idukki",
+      mascot: "📖",
+      year: "2014-2022",
+      achievements: ["84% in 10th", "Subject: Computer Science"],
+      skills: ["Mathematics", "Physics", "Chemistry", "Computer"],
       description:
-        "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
+        "Focused on computer science, Python programming, and database fundamentals like MySQL.",
     },
     {
-      degree: "Higher Secondary Certificate (HSC)",
-      school: "Dottopara Model Degree College",
-      mascot: "📗",
-      year: "2021-2023",
-      achievements: ["GPA: 4.25", "Subject: Arts"],
-      skills: ["Literature", "Social Studies", "Economics", "History"],
+      degree: "Diploma in Computer Engineering",
+      school: "Model Polytechnic College Painavu",
+      mascot: "🎓",
+      year: "2022-2025",
+      achievements: ["GPA: 6.25", "Subject: Computer Engineering"],
+      skills: ["Python", "Java", "C Programming", "Arduino UNO","OOP","PHP"],
       description:
-        "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
+        "Gained practical experience in computer engineering through hands-on labs, real-time problem solving, and technical projects.",
     },
   ];
 
