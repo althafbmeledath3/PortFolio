@@ -2,14 +2,18 @@ import { ReactLenis } from "lenis/react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
+import InstagramHomeImg from "@/assets/images/InstagramHome.png";
+import BookMyShowImg from "@/assets/images/BookMyShow.png";
+import OlxCloneImg from "@/assets/images/OLX CLone.png";
+import EcommerceImg from "@/assets/images/Ecommerce.png";
 
 const projects = [
   {
     title: "Instagram Clone",
     description:
       "Built an Instagram clone with features like post sharing, user profiles, and responsive UI.",
-    src: "src/assets/images/InstagramHome.png",
-    link: "src/assets/images/InstagramHome.png",
+    src: InstagramHomeImg,
+    link: InstagramHomeImg,
     color: "#5196fd",
     githubLink: "https://github.com/althafbmeledath3/Instagram-clone.git",
     // liveLink: "",
@@ -18,8 +22,8 @@ const projects = [
     title: "BookMyShow Clone",
     description:
       "Developed a BookMyShow clone with movie listings, booking functionality, and admin management features.",
-    src: "src/assets/images/BookMyShow.png",
-    link: "src/assets/images/BookMyShow.png",
+    src: BookMyShowImg,
+    link: BookMyShowImg,
     color: "#8f89ff",
     githubLink: "https://github.com/althafbmeledath3/bookmyshow.git",
     // liveLink: "",
@@ -28,8 +32,8 @@ const projects = [
     title: "OLX Clone",
     description:
       "🚀Created an OLX clone with product listing, user authentication, and category-based search functionality. 💻✨",
-    src: "src/assets/images/OLX CLone.png",
-    link: "src/assets/images/OLX CLone.png",
+    src: OlxCloneImg,
+    link: OlxCloneImg,
     color: "#fff",
     githubLink: "https://github.com/althafbmeledath3/OLX---Clone",
     // liveLink: "https://codewhisperer.vercel.app/",
@@ -38,8 +42,8 @@ const projects = [
     title: "Ecommerce 🛒",
     description:
       "Built a full-featured eCommerce website with product browsing, cart management, and secure checkout functionality. 🛍️💻✨",
-    src: "src/assets/images/Ecommerce.png",
-    link: "src/assets/images/Ecommerce.png",
+    src: EcommerceImg,
+    link: EcommerceImg,
     color: "#ed649e",
     githubLink: "https://github.com/althafbmeledath3/QuicKArt",
     // liveLink: "https://codekori.js.org",
