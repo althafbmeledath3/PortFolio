@@ -6,7 +6,6 @@ import Meteors from "@/components/ui/meteors";
 import PortfolioPage from "@/pages/About/About";
 import SparklesText from "@/components/ui/sparkles-text";
 import { FlipWords } from "@/components/ui/flip-words";
-import SplashCursor from "../../../ReactBits/SplashCursor/SplashCursor";
 
 // Grid Background - Replacing the HexagonBackground
 const GridBackground = () => {
@@ -130,7 +129,6 @@ const profile = {
 
   return (
     <>
-      <SplashCursor />
       <main className="bg-[#020617] text-white min-h-screen">
         <section
           id="home"

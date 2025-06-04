@@ -8,6 +8,7 @@ import Hero from "./pages/Hero/Hero";
 import Skills from "./pages/Skills/Skills";
 import Education from "./pages/Education/Education";
 import { Route, Routes, useLocation } from "react-router-dom";
+import SplashCursor from "./ReactBits/SplashCursor/SplashCursor";
 
 export default function App() {
   const location = useLocation();
@@ -20,6 +21,7 @@ export default function App() {
 
   return (
     <>
+      <SplashCursor />
       <Header />
       {/* Conditional Rendering */}
       {isOnePage ? (
