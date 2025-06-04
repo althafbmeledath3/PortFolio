@@ -26,6 +26,42 @@ export default function Header() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // Add scroll spy effect
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('section[id]');
+      const scrollPosition = window.scrollY + 100; // Offset for better accuracy
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          setActiveLink(sectionId);
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const offset = 80; // Adjust this value based on your header height
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+    setIsMenuOpen(false);
+  };
+
   const navLinks = [
     { id: "home", icon: FaHome, text: "Home", path: "/" },
     { id: "skills", icon: FaCode, text: "Skills", path: "/skills" },

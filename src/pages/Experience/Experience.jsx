@@ -80,7 +80,7 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <>
+    <section id="experience" className="min-h-screen">
       <div className="min-h-screen bg-gradient-to-b relative overflow-hidden pt-32 pb-20">
         {/* Animated gradient background */}
         <div className="absolute inset-0 bg-[#04081A]" />
@@ -114,7 +114,7 @@ const ExperienceSection = () => {
               <div className="absolute inset-0 -z-10 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 blur-3xl rounded-full" />
             </div>
             <p className="text-lg md:text-xl text-gray-400 font-medium tracking-wide text-center max-w-2xl">
-            "Building tomorrow’s solutions with today’s code and endless passion."
+            "Building tomorrow's solutions with today's code and endless passion."
             </p>
           </div>
 
@@ -130,8 +130,10 @@ const ExperienceSection = () => {
         <div className="absolute top-20 left-20 w-96 h-96 bg-cyan-500/10 rounded-full filter blur-3xl animate-pulse" />
         <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/10 rounded-full filter blur-3xl animate-pulse delay-1000" />
       </div>
-    </>
+    </section>
   );
 };
 
 export default ExperienceSection;
+
+
