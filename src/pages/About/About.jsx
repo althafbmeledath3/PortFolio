@@ -1,6 +1,6 @@
 import HeroImg from "@/assets/images/Hero.jpg";
 
-import OlovaLogo from "@/assets/images/olova.png";
+
 
 export default function About() {
   return (
@@ -29,10 +29,7 @@ export default function About() {
               </p>
               <p className="text-white">
               I specialize in the MERN stack, love clean design, and focus on crafting full-fledged products — from frontend interfaces to backend APIs.
-My mission is simple: to build innovative platforms, tools, and digital experiences that make an impact and solve real-world problems. 💡💻🚀
-
-
-              </p>
+My mission is simple: to build innovative platforms, tools, and digital experiences that make an impact and solve real-world problems. 💡💻🚀              </p>
 
               <div className="pt-6">
                 <blockquote className="border-l-4 border-gray-300 pl-4">
@@ -55,3 +52,5 @@ My mission is simple: to build innovative platforms, tools, and digital experien
     </>
   );
 }
+
+

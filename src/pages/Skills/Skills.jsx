@@ -10,6 +10,7 @@ import {
   FaGitAlt,
   FaAws,
 } from "react-icons/fa";
+
 import {
   SiTailwindcss,
   SiMongodb,
@@ -148,3 +149,11 @@ const SkillsSection = () => {
 };
 
 export default SkillsSection;
+
+
+
+
+
+
+
+
